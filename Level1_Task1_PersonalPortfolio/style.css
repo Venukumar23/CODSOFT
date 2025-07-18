@@ -1,178 +1,219 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6; /* easier reading */
 }
 
-/* adding styles to the header */
+/* Header */
 header {
-  background-color: #333;
+  background-color: #262957; /* deeper blue for stronger header */
   color: #fff;
-  padding: 20px;
+  padding: 25px 20px;
   text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* adding styles to the about section */
+/* About Section */
 #about {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* adding styles to the about image */
 #about img {
   border-radius: 50%;
-  margin: 15px 0;
-} 
+  margin: 20px 0;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+}
 
-/* adding styles to the about paragraph */
 #about p {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
 }
 
 /* Skills Section */
 #skills {
-  padding: 40px 20px;
-  background-color: #f0f4f8;
-  border-radius: 10px;
+  padding: 50px 20px;
+  background-color: #e3f2fd; /* softer blue */
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 30px auto;
 }
 
 #skills h2 {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #333;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #1a237e;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
+  gap: 20px;
   justify-items: center;
 }
 
 .skill {
   background-color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  font-weight: 500;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(26, 35, 126, 0.1);
+  font-weight: 600;
   color: #222;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: default;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .skill:hover {
-  transform: scale(1.05);
-  background-color: #e8f0fe;
+  transform: scale(1.1);
+  background-color: #bbdefb;
 }
 
 /* Projects Section */
 #projects {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
+  padding: 50px 20px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
 }
 
 #projects h2 {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #333;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #1a237e;
 }
 
 .project {
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 35px;
+  padding: 25px 30px;
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  border-radius: 15px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
 }
 
 .project h3 {
-  font-size: 1.25rem;
-  color: #222;
+  font-size: 1.3rem;
+  color: #1a237e;
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .project p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: #555;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* GitHub link next to title */
+/* GitHub link */
 .github-link {
   font-size: 0.9rem;
-  color: #007bff;
+  color: #1565c0;
   text-decoration: none;
-  background-color: #e8f0fe;
-  padding: 3px 8px;
-  border-radius: 6px;
+  background-color: #bbdefb;
+  padding: 4px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 .github-link:hover {
-  background-color: #d0e2ff;
+  background-color: #90caf9;
   text-decoration: underline;
 }
 
 /* Resume Section */
 #resume {
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
   background-color: #f8f9fa;
+  max-width: 800px;
+  margin: 40px auto;
 }
 
 .resume-btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background-color: #007bff;
+  margin-top: 25px;
+  padding: 14px 30px;
+  background-color: #1a237e;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
   transition: background-color 0.3s ease;
 }
 
 .resume-btn:hover {
-  background-color: #0056b3;
+  background-color: #283593;
 }
 
 /* Contact Section */
 #contact {
-  padding: 40px 20px;
-  background-color: #f0f0f0;
+  padding: 50px 20px;
+  background-color: #e3f2fd;
   text-align: center;
+  max-width: 700px;
+  margin: 40px auto 60px;
+  border-radius: 12px;
 }
 
 .contact-list {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .contact-list li {
-  margin: 10px 0;
-  font-size: 18px;
+  margin: 12px 0;
+  font-size: 1.2rem;
+  color: #1565c0;
 }
 
 .contact-list i {
-  margin-right: 10px;
-  color: #007bff;
+  margin-right: 12px;
+  color: #1a237e;
 }
 
 .contact-list a {
-  color: #007bff;
+  color: #1a237e;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .contact-list a:hover {
   text-decoration: underline;
+  color: #283593;
+}
+
+/* Footer */
+footer {
+  background-color: #1a237e;
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  margin-top: 60px;
+  box-shadow: 0 -2px 10px rgba(26, 35, 126, 0.3);
 }
