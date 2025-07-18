@@ -19,13 +19,70 @@ header {
 }
 
 /* adding styles to the about image */
-/* #about img {
+#about img {
   border-radius: 50%;
   margin: 15px 0;
-} */ 
+} 
 
 /* adding styles to the about paragraph */
 #about p {
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* Projects Section */
+#projects {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.project {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+}
+
+.project h3 {
+  font-size: 1.25rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* GitHub link next to title */
+.github-link {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  background-color: #e8f0fe;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.github-link:hover {
+  background-color: #d0e2ff;
+  text-decoration: underline;
 }
