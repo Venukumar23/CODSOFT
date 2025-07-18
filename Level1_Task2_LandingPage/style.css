@@ -1,0 +1,67 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #fafafa;
+}
+
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;         /* Allow items to wrap */
+  justify-content: center; /* Center items */
+  gap: 20px;               /* Spacing between feature boxes */
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.feature-box {
+  background: #0077cc;
+  color: white;
+  flex: 1 1 280px;        /* Flex grow/shrink with base width */
+  max-width: 300px;       /* Maximum width */
+  margin: 10px;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,119,204,0.3);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+}
+
+.feature-box h2 {
+  margin-bottom: 12px;
+}
+
+.feature-box p {
+  font-size: 1rem;
+}
