@@ -144,3 +144,35 @@ header {
 .resume-btn:hover {
   background-color: #0056b3;
 }
+
+/* Contact Section */
+#contact {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-list i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
